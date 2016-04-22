@@ -82,6 +82,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Monospaced", 0, 48)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("0");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 0, 0), new java.awt.Color(102, 102, 102)));
 
         jButtonC.setBackground(new java.awt.Color(102, 102, 102));
@@ -328,42 +329,45 @@ public class Calculadora extends javax.swing.JFrame {
     int k;
     int y;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+1);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+2);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+0);
     }//GEN-LAST:event_jButton0ActionPerformed
 
     private void jButtonCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCActionPerformed
-        jLabel1.setText("");
+        jLabel1.setText("0");
     }//GEN-LAST:event_jButtonCActionPerformed
 
     private void jButtonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMasActionPerformed
         x = Integer.parseInt(jLabel1.getText());
-        jLabel1.setText("");
+        jLabel1.setText("0");
         k=1;
     }//GEN-LAST:event_jButtonMasActionPerformed
 
     private void jButtonMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenosActionPerformed
         x = Integer.parseInt(jLabel1.getText());
-        jLabel1.setText("");
+        jLabel1.setText("0");
         k=2;
     }//GEN-LAST:event_jButtonMenosActionPerformed
 
     private void jButtonMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultActionPerformed
         x = Integer.parseInt(jLabel1.getText());
-        jLabel1.setText("");
+        jLabel1.setText("0");
         k=3;
     }//GEN-LAST:event_jButtonMultActionPerformed
 
     private void jButtonEntreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEntreActionPerformed
         x = Integer.parseInt(jLabel1.getText());
-        jLabel1.setText("");
+        jLabel1.setText("0");
         k=4;
     }//GEN-LAST:event_jButtonEntreActionPerformed
 
@@ -388,30 +392,37 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonIgActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+3);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+4);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+5);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+6);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+7);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+8);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        vistaDefecto();
         jLabel1.setText(jLabel1.getText()+9);
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -469,4 +480,12 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButtonMult;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+public void vistaDefecto(){
+    if(jLabel1.getText()=="0"){
+        jLabel1.setText("");
+    }
+}
+
+
 }
