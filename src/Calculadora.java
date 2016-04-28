@@ -325,9 +325,9 @@ public class Calculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    int x;
+    float x;
     int k;
-    int y;
+    float y;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         vistaDefecto();
         jLabel1.setText(jLabel1.getText()+1);
@@ -374,19 +374,19 @@ public class Calculadora extends javax.swing.JFrame {
     private void jButtonIgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIgActionPerformed
         y = Integer.parseInt(jLabel1.getText());
         if(k==1){
-            int res = x + y;
+            float res = x + y;
             jLabel1.setText(""+res);
         }
         if(k==2){
-            int res = x - y;
+            float res = x - y;
             jLabel1.setText(""+res);
         }
         if(k==3){
-            int res = x*y;
+            float res = x*y;
             jLabel1.setText(""+res);
         }
         if(k==4){
-            int res = x/y;
+            float res = x/y;
             jLabel1.setText(""+res);
         }
     }//GEN-LAST:event_jButtonIgActionPerformed
